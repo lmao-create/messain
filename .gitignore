@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Runtime data and local secrets
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+
+# Node
+node_modules/
+frontend/dist/

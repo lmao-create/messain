@@ -1,0 +1,68 @@
+The Messain Custom License
+Version 1.0 — October 2026
+
+Copyright (c) 2026 The Messain Authors
+
+This software, including its source code, documentation, and design
+(the "Software"), is made available under the following custom terms.
+
+1. Grant of License
+
+   Permission is granted, free of charge, to any person obtaining a copy
+   of the Software to:
+
+   a. use the Software for personal, educational, and non-commercial
+      purposes;
+   b. run, study, and modify the source code for learning and personal
+      projects;
+   c. deploy the Software on private servers or networks for personal
+      use;
+   d. share the Software, in original or modified form, with others free
+      of charge, provided that a copy of this license accompanies every
+      copy.
+
+2. Restrictions
+
+   You may NOT:
+
+   a. sell, lease, sublicense, or commercially redistribute the Software
+      or any derivative of it, in whole or in part;
+   b. relicense the Software, or modified copies of it, under different
+      terms;
+   c. present the original Software as your own work or claim authorship
+      of it;
+   d. remove or obscure the copyright notice or this license from any
+      copy or source file.
+
+   You MAY rename and rebrand modified copies for your own personal,
+   non-commercial use, as long as the original copyright and license
+   notice remain in the source files. The "Messain" name and logo may
+   not be used to promote derived products without permission.
+
+3. Contributions
+
+   By submitting changes, improvements, or suggestions to the project,
+   you grant the copyright holder a perpetual, worldwide, royalty-free
+   right to use, modify, and include them in the Software under this
+   license.
+
+4. Disclaimer of Warranty and Limitation of Liability
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER OR COPYRIGHT HOLDERS BE LIABLE
+   FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. Termination
+
+   This license terminates automatically if you fail to comply with any
+   of its terms. The copyright holder may grant permission again at
+   their discretion.
+
+6. Contact
+
+   For commercial licensing, redistribution, or any other permission
+   beyond the terms above, contact the copyright holder.

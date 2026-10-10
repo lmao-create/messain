@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Subtle dark scrollbars to match the theme. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}

@@ -1,8 +1,8 @@
 # Messain
 
 A simple, modern messaging application. Register, log in, and exchange persistent,
-real-time messages through a clean dark-themed chat interface. Runs locally with one
-command, and deploys to Render in a few clicks.
+real-time messages through a clean dark-themed chat interface. Runs locally with a
+single command.
 
 ![Tech](https://img.shields.io/badge/FastAPI%20%2B%20SQLite%20%2B%20React%20%2B%20Vite-backend%20%2B%20frontend-4f46e5)
 
@@ -127,23 +127,6 @@ git remote add origin https://github.com/YOUR-USERNAME/messain.git
 git push -u origin main
 ```
 
-## Deploy to Render (free)
-
-The repo includes a [render.yaml](render.yaml) blueprint, so deployment is a few clicks:
-
-1. Push the repository to GitHub (see **Publish to GitHub** above).
-2. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint** → select your repo → **Apply**.
-
-Render then runs: `pip install` → `npm ci && npm run build` → `uvicorn app.main:app --host 0.0.0.0 --port $PORT`, with a health check on `/api/health`. Every push to `main` redeploys automatically.
-
-Things to know about the free plan:
-
-- The service **sleeps after ~15 minutes** without traffic; the first request afterwards takes up to a minute to wake up. The chat UI handles this — it shows the offline banner, polls, and reconnects when the server is back.
-- The filesystem is **ephemeral**: accounts and messages are **reset on every restart or redeploy**. This makes the free tier a demo, not a permanent home.
-- Because anyone with the URL can register, tokens are set to expire after 7 days.
-
-For persistent storage, upgrade to a paid plan with a disk, or host on Fly.io / a VPS.
-
 ## Tests
 
 ```powershell
@@ -191,7 +174,6 @@ events, WebSocket authentication, and database migrations from older schema vers
 ├── tests/                    # pytest suite (uses a temporary SQLite database)
 │   └── test_app.py
 ├── conftest.py               # Makes the project root importable for pytest
-├── render.yaml               # Render deployment blueprint
 ├── .env.example              # Documented environment variables
 ├── requirements.txt          # Backend dependencies
 ├── requirements-dev.txt      # + pytest / httpx for the test suite

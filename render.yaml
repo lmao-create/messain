@@ -1,0 +1,28 @@
+# Render Blueprint for Messain
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Deploy: push this repo to GitHub, then on https://dashboard.render.com
+# choose "New" -> "Blueprint" and select the repository.
+#
+# NOTE (free plan): the service sleeps after ~15 minutes without traffic
+# (first request then takes up to a minute to wake up), and the filesystem
+# is ephemeral -- accounts and messages are reset on every restart/redeploy.
+
+services:
+  - type: web
+    name: messain
+    runtime: python
+    plan: free
+    # Install backend deps, then build the frontend into frontend/dist
+    # (FastAPI serves that folder in production mode).
+    buildCommand: pip install -r requirements.txt && cd frontend && npm ci && npm run build
+    # Render injects $PORT; the app must listen on 0.0.0.0.
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /api/health
+    envVars:
+      # The Python runtime needs Node.js available to build the frontend.
+      - key: NODE_VERSION
+        value: 22
+      # Keep tokens valid for a week on a public deployment.
+      - key: MESSAIN_TOKEN_EXPIRE_DAYS
+        value: 7
